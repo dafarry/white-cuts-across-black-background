@@ -5,12 +5,6 @@ before but not as a repeating loop. I couldn't trace its source so I've
 coded up a quick version myself in Python. Apologies to whoever originated
 the effect. This version loops, of course.
 
-I did this as a "quick" coding challenge, but I must admit that it proved
-more difficult than I expected. I had to import nearly all of the various
-graphics modules from the "pillow" image library to get enough features to
-make it work. I consider it to be time reasonably well spent though, since
- I now know a lot more about that image library than I did before. 
-
 This file is about 50 lines of Python, using the Numpy and Pillow
 libraries and ffmpeg to create the video:
 
@@ -25,11 +19,23 @@ Installation instructions for the Python libraries are below.
 
 ![White Cuts on Black Background](gif/cuts-anim.gif)
 
-Installation instructions for Python libraries
-----------------------------------------------
+## How it works
 
-Windows
--------
+I did this as a "quick" coding challenge, but I must admit that it proved
+more difficult than I expected. I had to import nearly all of the various
+graphics modules from the "pillow" image library to get enough features to
+make it work. I consider it to be time reasonably well spent though, since
+I now know a lot more about that image library than I did before. 
+
+The random number generator is seeded in a way that makes it repeat every
+20 cuts. I run that sequence for eight repetitions and only the last is saved.
+The first seven repetitions are enough to populate the background in a way
+that gets repeated exactly the eighth time.
+
+## Installation instructions for Python libraries
+
+**Windows**
+
 Download & install the latest Python from python.org  
 Then at the Windows Command Prompt, install the libraries like so:
 
@@ -44,8 +50,8 @@ Only needed for making the mpeg video with the "makevideo" python script.
 Unzip the file, and put ffmpeg.exe somewhere on your PATH, e.g.: 
 in C:\WINDOWS
 
-Ubuntu and Debian
------------------
+**Ubuntu and Debian**
+
 Works fine with system Python3, version 3.8.2, at the time of writing  
 Install the following packages with `sudo apt install`
 
