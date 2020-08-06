@@ -7,7 +7,7 @@ from PIL import ImageTk
 import time
 
 size=800
-cut, cuts, reps = 0, 20, 8
+cuts, reps = 20, 8
 
 blankimg = Image.new('L', (size, size), color=0)
 root = tk.Tk()
