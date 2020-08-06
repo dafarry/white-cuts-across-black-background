@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-import tkinter as tk
 import numpy as np
 from PIL import Image, ImageDraw, ImageChops, ImageOps, ImageFilter, ImageEnhance
 import os, shutil
