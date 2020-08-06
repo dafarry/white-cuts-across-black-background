@@ -15,7 +15,8 @@ to your screen in real time rather than making a video.
 
 [white-cuts-on-black-display.py](white-cuts-on-black-display.py)
 
-Installation instructions for the Python libraries are below.
+Short explanation of how the loop was achieved, and installation
+instructions for the Python libraries are below the animation.
 
 ![White Cuts on Black Background](gif/cuts-anim.gif)
 
